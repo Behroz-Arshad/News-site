@@ -1,0 +1,24 @@
+{% extends 'News/base.html' %}
+{% block title %}BBC News{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+    {% for new, des, i in mylist %}
+    <img src="{{i}}" alt="">
+    <h3>News:</h3> {{new}}
+    {{value | linebreaks}}
+
+    <h4>Description:</h4> {{des}}
+    {{value | linebreaks}}
+
+
+
+    {% endfor %}
+
+
+
+
+</div>
+{% endblock %}
